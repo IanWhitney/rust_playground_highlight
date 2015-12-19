@@ -44,9 +44,34 @@ With Gist Generated blocks only the code in the Gist is displayed in the Playgro
 
 In the example above, I've left the `main` function out of the sample code, but it is present in the [Playground](https://play.rust-lang.org/?gist=cc6e026b0654a4216074&version=stable)
 
-## Requirements
+## Output
 
-I am using this with Jekyll 2.5.3. It *should* work with Jekyll 3
+```html
+<code>
+  <pre>
+    /*your sweet Rust code*/
+  </pre>
+  <a href='https://play.rust-lang.org/...' target='_new' class='playground btn btn-xs btn-primary active' role='button'>Run</a>
+</code>
+```
+Thus plugin does not change how the code is rendered, it only inserts the link button between the `</pre>` and `</code>` tags.
+
+Styling and positioning the button is up to you. No CSS is provided with this plugin. The CSS used in my example screenshot is:
+
+```css
+div.highlight a.playground {
+  position: absolute;
+  z-index: 10;
+  float: right;
+  right: 8px;
+  top: 8px;
+  outline: none;
+}
+```
+
+## Requirements
+- I am using this with Jekyll 2.5.3. It *should* work with Jekyll 3.
+- The CSS classes on the button assume you have Bootstrap.
 
 ## Limitations
 
