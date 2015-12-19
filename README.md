@@ -1,16 +1,12 @@
 # Rust Playground Highlight Blocks
 
-Automatically add links to the Rust Playground for code samples in your Jekyll site.
+Automatically add links to the Rust Playground for code samples in your Jekyll site, so that they look like this:
 
 <img src="http://i.imgur.com/gkFQsHJ.png" />
 
 ## Usage
 
 You can link two different kinds of Rust Playground pages -- dynamically generated & gist generated
-
-## Requirements
-
-I am using this with Jekyll 2.5.3. It *should* work with Jekyll 3
 
 ### Dynamically Generated
 
@@ -47,6 +43,10 @@ The Rust Playground can also display code that is in a Gist. You can use the Gis
 With Gist Generated blocks only the code in the Gist is displayed in the Playground. The code in your block is ignored. This is nice if you want to only display a small section of code in your block, but you want the full version of the code to be in the Playground.
 
 In the example above, I've left the `main` function out of the sample code, but it is present in the [Playground](https://play.rust-lang.org/?gist=cc6e026b0654a4216074&version=stable)
+
+## Requirements
+
+I am using this with Jekyll 2.5.3. It *should* work with Jekyll 3
 
 ## Limitations
 
