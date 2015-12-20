@@ -69,6 +69,25 @@ div.highlight a.playground {
 }
 ```
 
+## Installation
+
+In your Gemfile, add
+
+```
+gem 'rust_playground_highlight', :require => 'rust_playground_highlight'
+```
+
+Then run `bundle`
+
+In your `_plugins` directory (which you can create, if you don't have one), add the file `bundler.rb` with the content:
+
+```
+# _plugins/bundler.rb
+require "rubygems"
+require "bundler/setup"
+Bundler.require(:default)
+```
+
 ## Requirements
 - I am using this with Jekyll 2.5.3. It *should* work with Jekyll 3.
 - The CSS classes on the button assume you have Bootstrap.
