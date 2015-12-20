@@ -31,7 +31,7 @@ module Jekyll
 
         new(
           link_type.new(
-            rust_highlight_block.send(link_type.id_method)
+            rust_highlight_block.send(link_type.required_value)
           )
         )
       end
