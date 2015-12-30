@@ -10,7 +10,7 @@ module Jekyll
       def render(context)
         #calls render on Liquid::Block, which returns the content of the block
         self.raw = self.method(:render).super_method.super_method.call(context).to_s.strip
-        self.gist_id = options_hash[:playground_id]
+        self.gist_id = options_hash[:gist_id]
         super
       end
 
