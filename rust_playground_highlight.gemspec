@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "rust_playground_highlight"
-  gem.version       = '0.1.3'
+  gem.version       = '0.1.4'
   gem.authors       = ["IanWhitney"]
   gem.email         = "ian@ianwhitney.com"
   gem.description   = %q{Automatically add links to the Rust Playground for code samples in your Jekyll site.}
