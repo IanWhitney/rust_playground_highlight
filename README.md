@@ -59,13 +59,21 @@ Thus plugin does not change how the code is rendered, it only inserts the link b
 Styling and positioning the button is up to you. No CSS is provided with this plugin. The CSS used in my example screenshot is:
 
 ```css
-div.highlight a.playground {
-  position: absolute;
-  z-index: 10;
-  float: right;
-  right: 8px;
-  top: 8px;
+.highlight div.playground {
+  text-align: right;
   outline: none;
+  padding: 6px;
+}
+
+.highlight a.playground-btn {
+  border: 1px solid #555;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #eee;
+  color:#555;
+
 }
 ```
 
