@@ -4,7 +4,7 @@ module Jekyll
       attr_accessor :raw, :gist_id
 
       def add_code_tag(code)
-        super.sub(/\n*<\/pre>/,"</pre><a href='#{playground_url}' target='_new' class='playground btn btn-xs btn-primary active' role='button'>Run</a>").strip
+        super.sub(/\n*<\/pre>/,"</pre><div><a href='#{playground_url}' target='_new' class='playground-btn' role='button'>Run</a></div>").strip
       end
 
       def render(context)
