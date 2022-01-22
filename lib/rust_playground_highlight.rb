@@ -37,7 +37,7 @@ module Jekyll
       end
 
       def url
-        "https://play.rust-lang.org/?#{query_string}"
+        "https://play.rust-lang.org/?#{query_string}&edition=2018"
       end
     end
 
