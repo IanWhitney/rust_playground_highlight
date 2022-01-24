@@ -4,7 +4,7 @@ module Jekyll
       attr_accessor :raw, :gist_id
 
       def add_code_tag(code)
-        super.sub(/\n*<\/pre>/,"</pre><a href='#{playground_url}' target='_new' class='playground btn btn-xs btn-primary active' role='button'>Run</a>").strip
+        super.sub(/\n*<\/pre>/,"</pre><div class='playground'><a href='#{playground_url}' target='_new' class='playground-btn' role='button'>Run in Rust Playground</a></div>").strip
       end
 
       def render(context)
@@ -37,7 +37,7 @@ module Jekyll
       end
 
       def url
-        "https://play.rust-lang.org/?#{query_string}"
+        "https://play.rust-lang.org/?#{query_string}&edition=2018"
       end
     end
 
