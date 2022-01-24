@@ -17,5 +17,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.license       = "MIT"
 
-  gem.add_dependency "jekyll", ">= 2.0", "<= 4.2"
+  gem.add_dependency "jekyll", ">= 3.0", "<= 4.2"
 end
